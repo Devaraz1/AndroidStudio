@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.belajarandroidactivity.MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/calculator">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Kuzor Banget"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/angkaSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Angka 1"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/inputSatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka satu"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <TextView
+        android:id="@+id/angkaDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Angka Dua"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/inputDua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kelas anda"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:backgroundTint="#E64A19"
+            android:fontFamily="sans-serif"
+            android:text="+"
+            android:layout_marginEnd="50dp"/>
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:backgroundTint="#C2185B"
+            android:fontFamily="sans-serif"
+            android:text="-"
+            android:layout_marginEnd="50dp"/>
+
+        <Button
+            android:id="@+id/btnPersen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:backgroundTint="#303F9F"
+            android:fontFamily="sans-serif"
+            android:text="%" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center">
+        <Button
+            android:id="@+id/cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:backgroundTint="#D32F2F"
+            android:fontFamily="sans-serif"
+            android:layout_marginEnd="50dp"
+            android:text="x" />
+
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:backgroundTint="#FBC02D"
+            android:fontFamily="sans-serif"
+            android:text="/"
+            android:layout_marginEnd="50dp"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:backgroundTint="#388E3C"
+            android:fontFamily="sans-serif"
+            android:text="C" />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E1AA22"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HASIL"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+        android:text="0"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+</LinearLayout>
+
+</LinearLayout>
