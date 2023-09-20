@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageButton
+        android:id="@+id/ibBlack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/icon_pack"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        />
+    
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/geats"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp" />
+    
+    <TextView
+        android:id="@+id/tvproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kamen Rider Geats - Kamen Rider Geats Magnumboost Form,
+        Bandai Spirits S.H.Figuarts Action Figure"
+        android:textColor="#535353"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/gambar1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$65.00"
+        android:textColor="#F57C00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvproduk"
+        android:layout_marginStart="20dp"/>
+    <ImageButton
+        android:id="@+id/ibFavorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/baseline_favorite_24"
+        android:backgroundTint="#f57c00"
+        android:layout_below="@id/tvproduk"
+        android:layout_marginEnd="20dp"
+        />
+    <ImageButton
+        android:id="@+id/ibStar1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/baseline_star_rate_24"
+        android:backgroundTint="#fbc32d"
+        android:layout_below="@id/tvPrice"
+        android:layout_marginStart="20dp"
+        />
+    <ImageButton
+        android:id="@+id/ibStar2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/baseline_star_rate_24"
+        android:backgroundTint="#fbc32d"
+        android:layout_below="@id/tvPrice"
+        android:layout_toRightOf="@id/ibStar1"
+        />
+    <ImageButton
+        android:id="@+id/ibStar3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/baseline_star_rate_24"
+        android:backgroundTint="#fbc32d"
+        android:layout_below="@id/tvPrice"
+        android:layout_toRightOf="@id/ibStar2"
+        />
+    <ImageButton
+        android:id="@+id/ibStar4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/baseline_star_rate_24"
+        android:backgroundTint="#fbc32d"
+        android:layout_below="@id/tvPrice"
+        android:layout_toRightOf="@id/ibStar3"
+        />
+    <ImageButton
+        android:id="@+id/ibStar5"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/baseline_star_rate_24"
+        android:backgroundTint="#fbc32d"
+        android:layout_below="@id/tvPrice"
+        android:layout_toRightOf="@id/ibStar4"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ibStar5"
+        android:layout_marginTop="10dp" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#7e7e7e"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#7e7e7e"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/dimenstion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dimenstion"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#7e7e7e"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/brandName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BANDAI"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp" />
+
+            <TextView
+                android:id="@+id/typeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S.H.Figurarts"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp" />
+
+            <TextView
+                android:id="@+id/dimenstionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.5 x 3 x 5.9 inches"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFBC002D"
+        android:text="Purchase"
+        android:textSize="18dp"
+        />
+
+</RelativeLayout>

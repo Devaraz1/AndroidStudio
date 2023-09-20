@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardDoaActivity"
+    >
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        />
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/logo_doa"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Doa Dan Dzikir App"
+        android:layout_toLeftOf="@id/ivLogo"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/pilih"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Pilihan Doa Terbaik"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/orage"
+            android:layout_below="@id/ivBackground"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/more"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/pilih"
+            app:cardCornerRadius="10dp"
+            android:layout_below="@id/ivBackground"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/gray"
+            android:layout_marginEnd="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selengkapnya"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pilih"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pilihanDoa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+</RelativeLayout>

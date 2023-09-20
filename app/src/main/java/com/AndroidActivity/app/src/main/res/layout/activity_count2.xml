@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Count">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_calculate_24"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Kalkulor Pinter Amat"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angka 1: "
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:textColor="#434242"
+        />
+
+    <EditText
+        android:id="@+id/inputAngka1"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Angka Pertama"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angka 2"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginEnd="15dp"
+        android:textSize="20sp"
+        android:textColor="#434242"
+        />
+    
+    <EditText
+        android:id="@+id/inputAngka2"
+        android:hint="Masukan Angka Kedua"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00796B"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:backgroundTint="#D32F2F"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btnModulus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D32F2F"
+            android:text="%" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:backgroundTint="#0288d1"
+            android:id="@+id/btnKali"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_marginHorizontal="50dp"
+            android:id="@+id/btnBagi"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/btnClear"
+            android:backgroundTint="#3c3c3c"
+            />
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textSize="30sp"
+        android:textColor="#131313"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#f4d36e"
+        />
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textSize="60sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:background="#f4d36e"
+        />
+</LinearLayout>

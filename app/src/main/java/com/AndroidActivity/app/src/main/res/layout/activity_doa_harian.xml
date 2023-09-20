@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoaHarianActivity">
+
+    <!--  Header  -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circletest">
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Doa Harian"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:maxLines="2"
+            />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/doa"
+            android:layout_toRightOf="@id/tvJudul"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            />
+    </RelativeLayout>
+    <!-- End of Relative Layout Header -->
+    <!-- Beginning of Scrollview and Recyclerview -->
+    <ScrollView
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:scrollbars="none">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDoaHarian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+    <ImageButton
+        android:id="@+id/ibMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/baseline_sort_24"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:background="@drawable/latihan_rectangle"
+        android:layout_alignParentEnd="true"
+        />
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:src="@drawable/krgeats"
+        android:layout_marginStart="150dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="35dp"
+        />
+    <TextView
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sale"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/ivPicture"
+        android:layout_marginStart="20dp"
+        android:textColor="#BC002D" />
+    <TextView
+        android:id="@+id/Discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40%"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@id/sale"
+        android:layout_marginStart="20dp"
+        android:textColor="#FFBC002D" />
+    <TextView
+        android:id="@+id/Limited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Limited"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/Discount"
+        android:layout_marginStart="20dp"
+        android:textColor="#FFBC002D"
+        />
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/Limited"
+        android:background="#b1b0b0" />
+    <TextView
+        android:id="@+id/tvPopuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="#FFBC002D"
+        android:layout_below="@id/garis"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Arrival"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="#8E9797"
+        android:layout_below="@id/garis"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+        android:layout_marginEnd="20dp"
+        android:textSize="18sp"
+        android:textColor="#8E9797"
+        android:layout_below="@id/garis"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:id="@+id/ivgambar1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/zetaarmy"
+        android:background="@drawable/cart_image"
+        android:layout_below="@id/tvPopuler"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/tvzetaarmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zeta Gundam Action Figure"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvPopuler"
+        android:layout_toRightOf="@id/ivgambar1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/brandName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BANDAI"
+        android:textSize="16dp"
+        android:textColor="#B1B0B0"
+        android:textStyle="bold"
+        android:layout_below="@id/tvzetaarmy"
+        android:layout_toRightOf="@id/ivgambar1"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$54.95"
+        android:textColor="#388e3c"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@id/brandName"
+        android:layout_toRightOf="@id/ivgambar1"
+        android:layout_marginStart="20dp" />
+    <ImageView
+        android:id="@+id/ivakira2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/akira"
+        android:background="@drawable/cart_image"
+        android:layout_below="@id/ivgambar1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/tvAkira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akira: Shotaro Kaneda"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/price"
+        android:layout_toRightOf="@id/ivakira2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/brandAkira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicom"
+        android:textSize="16dp"
+        android:textColor="#B1B0B0"
+        android:textStyle="bold"
+        android:layout_below="@id/tvAkira"
+        android:layout_toRightOf="@id/ivakira2"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$327.41"
+        android:textColor="#388e3c"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@id/brandAkira"
+        android:layout_toRightOf="@id/ivakira2"
+        android:layout_marginStart="20dp" />
+</RelativeLayout>
